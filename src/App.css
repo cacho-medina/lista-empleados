@@ -1,0 +1,10 @@
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.job {
+    font-size: small;
+}
+.mediano {
+    font-size: medium;
+}
