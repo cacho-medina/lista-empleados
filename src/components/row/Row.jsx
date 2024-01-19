@@ -1,14 +1,10 @@
 import Badge from "react-bootstrap/Badge";
-import persona from "../../assets/people.svg";
+import Avatar from "../avatar/Avatar";
 
 function Row({ empleado }) {
     return (
-        <div className="col-12 border rounded d-flex justify-content-start align-items-center px-1 gap-3 py-3 col-sm-6 col-lg-4">
-            <img
-                src={persona}
-                alt="imagen de empleado"
-                className="bg-secondary border rounded-circle"
-            />
+        <div className="col-12 border rounded d-flex justify-content-start align-items-center px-1 gap-4 py-3 col-sm-6 col-lg-4">
+            <Avatar avatar={empleado.pic} desc={empleado.fullName}></Avatar>
             <div>
                 <p className="fw-medium">{empleado.fullName}</p>
                 <p className="small">
